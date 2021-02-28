@@ -8,18 +8,22 @@ import android.view.Window
 import android.view.WindowManager
 
 class splash : AppCompatActivity() {
-    val splashTime=1000
+    val splashTime = 1000L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.requestFeature(Window.FEATURE_NO_TITLE)
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
         setContentView(R.layout.activity_splash)
+
 
         Handler().postDelayed({
             val home = Intent(this@splash, MainActivity::class.java)
             startActivity(home)
             finish()
-        },splashTime.toLong())
+        }, splashTime)
 
 
     }
