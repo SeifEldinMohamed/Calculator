@@ -14,21 +14,27 @@
         android:id="@+id/txt_exp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:gravity="end"
-        android:textSize="40sp"
+        android:background="#3D4F57"
         android:ellipsize="start"
+        android:gravity="end"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
         android:singleLine="true"
-        android:textColor="@color/actionbutton"/>
+        android:textColor="#fff"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/txtx_result"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:gravity="end"
-        android:textSize="30sp"
+        android:background="#3D4F57"
         android:ellipsize="end"
+        android:gravity="end"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
         android:singleLine="true"
-        android:textColor="@color/actionbutton" />
+        android:textColor="#fff"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/linearV"
@@ -46,24 +52,28 @@
             <Button
                 android:id="@+id/btn_clear"
                 style="@style/actionButton"
+                android:background="@drawable/btn_orange_style"
                 android:text="@string/ce"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_lpracket"
                 style="@style/actionButton"
+                android:background="@drawable/btn_orange_style"
                 android:text="@string/r_bracket"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_rpracket"
                 style="@style/actionButton"
+                android:background="@drawable/btn_orange_style"
                 android:text="@string/l_bracket"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_divide"
                 style="@style/actionButton"
+                android:background="@drawable/btn_orange_style"
                 android:text="@string/divide"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -78,21 +88,25 @@
             <Button
                 android:id="@+id/btn_seven"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_7" />
 
             <Button
                 android:id="@+id/btn_eight"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_8" />
 
             <Button
                 android:id="@+id/btn_nine"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_9" />
 
             <Button
                 android:id="@+id/btn_multi"
                 style="@style/actionButton"
+                android:background="@drawable/btn_orange_style"
                 android:text="@string/multi"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -107,21 +121,25 @@
             <Button
                 android:id="@+id/btn_four"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_4" />
 
             <Button
                 android:id="@+id/btn_five"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_5" />
 
             <Button
                 android:id="@+id/btn_six"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_6" />
 
             <Button
                 android:id="@+id/btn_minus"
                 style="@style/actionButton"
+                android:background="@drawable/btn_orange_style"
                 android:text="@string/minus"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -137,21 +155,25 @@
             <Button
                 android:id="@+id/btn_one"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_1" />
 
             <Button
                 android:id="@+id/btn_two"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_2" />
 
             <Button
                 android:id="@+id/btn_three"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_3" />
 
             <Button
                 android:id="@+id/btn_plus"
                 style="@style/actionButton"
+                android:background="@drawable/btn_orange_style"
                 android:text="@string/plus"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -166,18 +188,21 @@
             <Button
                 android:id="@+id/btn_dot"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/dot"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_zero"
                 style="@style/numButton"
+                android:background="@drawable/btn_gray_style"
                 android:text="@string/_0" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_erase"
                 style="@style/numButton"
                 android:adjustViewBounds="false"
+                android:background="@drawable/btn_gray_style"
                 android:cropToPadding="false"
                 android:isScrollContainer="false"
                 android:scaleType="centerInside"
@@ -186,6 +211,7 @@
             <Button
                 android:id="@+id/btn_equal"
                 style="@style/actionButton"
+                android:background="@drawable/btn_orange_style"
                 android:text="@string/equal"
                 android:textStyle="bold" />
         </LinearLayout>
