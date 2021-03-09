@@ -13,25 +13,25 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //numbers
-        btn_zero.setOnClickListener { appendonExpression("0", true) }
-        btn_one.setOnClickListener { appendonExpression("1", true) }
-        btn_two.setOnClickListener { appendonExpression("2", true) }
-        btn_three.setOnClickListener { appendonExpression("3", true) }
-        btn_four.setOnClickListener { appendonExpression("4", true) }
-        btn_five.setOnClickListener { appendonExpression("5", true) }
-        btn_six.setOnClickListener { appendonExpression("6", true) }
-        btn_seven.setOnClickListener { appendonExpression("7", true) }
-        btn_eight.setOnClickListener { appendonExpression("8", true) }
-        btn_nine.setOnClickListener { appendonExpression("9", true) }
-        btn_dot.setOnClickListener { appendonExpression(".", true) }
+        btn_zero.setOnClickListener { appendOnExpression("0", true) }
+        btn_one.setOnClickListener { appendOnExpression("1", true) }
+        btn_two.setOnClickListener { appendOnExpression("2", true) }
+        btn_three.setOnClickListener { appendOnExpression("3", true) }
+        btn_four.setOnClickListener { appendOnExpression("4", true) }
+        btn_five.setOnClickListener { appendOnExpression("5", true) }
+        btn_six.setOnClickListener { appendOnExpression("6", true) }
+        btn_seven.setOnClickListener { appendOnExpression("7", true) }
+        btn_eight.setOnClickListener { appendOnExpression("8", true) }
+        btn_nine.setOnClickListener { appendOnExpression("9", true) }
+        btn_dot.setOnClickListener { appendOnExpression(".", true) }
 
         // operations
-        btn_plus.setOnClickListener { appendonExpression("+", false) }
-        btn_minus.setOnClickListener { appendonExpression("-", false) }
-        btn_multi.setOnClickListener { appendonExpression("*", false) }
-        btn_divide.setOnClickListener { appendonExpression("/", false) }
-        btn_lpracket.setOnClickListener { appendonExpression("(", false) }
-        btn_rpracket.setOnClickListener { appendonExpression(")", false) }
+        btn_plus.setOnClickListener { appendOnExpression("+", false) }
+        btn_minus.setOnClickListener { appendOnExpression("-", false) }
+        btn_multi.setOnClickListener { appendOnExpression("*", false) }
+        btn_divide.setOnClickListener { appendOnExpression("/", false) }
+        btn_lpracket.setOnClickListener { appendOnExpression("(", false) }
+        btn_rpracket.setOnClickListener { appendOnExpression(")", false) }
 
         btn_clear.setOnClickListener {
             txt_exp.text = ""
@@ -52,8 +52,7 @@ class MainActivity : AppCompatActivity() {
                 val longresult = result.toLong()
                 if (result == longresult.toDouble()) {
                     txtx_result.text = longresult.toString()
-                }
-                else {
+                } else {
                     txtx_result.text = result.toString()
                 }
             } catch (e: Exception) {
@@ -62,15 +61,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun appendonExpression(str: String, check: Boolean) {
+    fun appendOnExpression(str: String, check: Boolean) {
         if (txtx_result.text.isNotEmpty()) {
             txt_exp.text = ""
         }
         if (check) {
             txtx_result.text = ""
             txt_exp.append(str)
-        }
-        else {
+        } else {
             txt_exp.append(txtx_result.text)
             txt_exp.append(str)
             txtx_result.text = ""
