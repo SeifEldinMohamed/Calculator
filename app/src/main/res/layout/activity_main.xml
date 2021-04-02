@@ -34,7 +34,7 @@
         android:paddingEnd="4dp"
         android:singleLine="true"
         android:textColor="#fff"
-        android:textSize="30sp" />
+        android:textSize="32sp" />
 
     <LinearLayout
         android:id="@+id/linearV"
